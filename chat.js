@@ -41,7 +41,9 @@ app.post("/index.html", function (req, res) {
       "<p style='font-family: Arial, Helvetica, sans-serif; font-size: large; margin: 100px 30px auto 100px'>"
     );
     res.write(chatCompletion.choices[0].message.content);
-    res.write("</p><button style='background-color: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;">Click Me</button>");
+    res.write(
+      "</p><button style='background-color: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;'>Click Me</button>"
+    );
     res.send();
   };
   openFun();
