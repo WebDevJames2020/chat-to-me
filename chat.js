@@ -42,7 +42,7 @@ app.post("/index.html", function (req, res) {
     );
     res.write(chatCompletion.choices[0].message.content);
     res.write(
-      "</p><br><br><br><button style='display:block; margin: 0 auto; background-color: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;'><a href='https://boundless-soap-production.up.railway.app/' style='color: #fff; text-decoration: none'>Ask another question</a></button>"
+      "</p><br><br><br><button style='display:block; margin: 0 auto; margin-top:50px background-color: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;'><a href='https://boundless-soap-production.up.railway.app/' style='color: #fff; text-decoration: none'>Ask another question</a></button>"
     );
     res.write(
       "</p><br><br><button style='display:block; margin: 0 auto; background-color: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;'><a href='https://blackbrush.co.uk' style='color: #fff; text-decoration: none'>Go back to my website</a></button>"
