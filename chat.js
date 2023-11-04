@@ -42,7 +42,7 @@ app.post("/index.html", function (req, res) {
     );
     res.write(chatCompletion.choices[0].message.content);
     res.write(
-      "</p><button style='display:block; margin: 0 auto; background-color: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;'>Click Me</button>"
+      "<br><br><br></p><button style='display:block; margin: 0 auto; background-color: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;'><a href='https://boundless-soap-production.up.railway.app/'>Ask another question</a></button>"
     );
     res.send();
   };
