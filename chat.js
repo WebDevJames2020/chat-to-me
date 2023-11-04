@@ -42,7 +42,7 @@ app.post("/index.html", function (req, res) {
     );
     res.write(chatCompletion.choices[0].message.content);
     res.write(
-      "</p><button style='background-color: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;'>Click Me</button>"
+      "</p><button style='display:block; margin: 0 auto; background-color: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;'>Click Me</button>"
     );
     res.send();
   };
