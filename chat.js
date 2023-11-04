@@ -34,14 +34,14 @@ app.post("/index.html", function (req, res) {
     //res.send("<h2> " + chatCompletion.choices[0].message.content + "</h2>");
     res.setHeader("Content-Type", "text/html; charset=utf-8");
     res.write(
-      "<h1 style='text-align: center; font-family: Arial, Helvetica, sans-serif; margin-top: 50px'>ChatGPT says..</h1>"
+      "<h1 style='text-align: center; font-family: Arial, Helvetica, sans-serif; margin-top: 50px'>Funny ChatGPT says..</h1>"
     );
 
     res.write(
-      "<p style='font-family: Arial, Helvetica, sans-serif; margin: 100px 30px auto 100px'>"
+      "<p style='font-family: Arial, Helvetica, sans-serif; font-size: large; margin: 100px 30px auto 100px'>"
     );
     res.write(chatCompletion.choices[0].message.content);
-
+    res.write("<p> test </p>");
     res.send();
   };
   openFun();
